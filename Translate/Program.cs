@@ -43,7 +43,6 @@ namespace MyApplication
 
             number = int.Parse(input);
 
-            // Преобразование в двоичную систему (для чисел от 0 до 255)
             result += (number / 128) % 2 * 10000000;
             result += (number / 64) % 2 * 1000000;
             result += (number / 32) % 2 * 100000;
@@ -55,6 +54,7 @@ namespace MyApplication
 
             Console.WriteLine(result);
         }
+
         static void Hours() {
             Console.WriteLine("Введите часы: ");
             string input = Console.ReadLine();
